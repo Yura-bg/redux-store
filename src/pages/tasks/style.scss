@@ -1,0 +1,150 @@
+.div1 {
+  // margin: 20px;
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    td {
+      button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}
+
+.modalEdit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .modalEditDiv {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .btnCloseedit {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: #333;
+      }
+    }
+
+    .inpModalEdit {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        height: 40px;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+      }
+
+      button {
+        height: 40px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}
+.modalSubtask {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(21, 21, 21);
+  padding: 20px;
+  border-radius: 8px;
+
+  h1 {
+    color: white;
+  }
+}
+
+.modalSubtask .btnSubtaskClose {
+  text-align: right;
+}
+
+.modalSubtask .inputsDivSubtask {
+  margin-bottom: 20px;
+}
+
+.modalSubtask .inputsDivSubtask input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modalSubtask .buttonsSubTask button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-right: 40px;
+}
+
+.modalSubtask .buttonsSubTask button:hover {
+  background-color: #0056b3;
+}

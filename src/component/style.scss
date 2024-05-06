@@ -1,0 +1,27 @@
+.navs {
+  background-color: #000000;
+  padding: 10px;
+  border-bottom: 2px solid #c6c6c6;
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: inline-block;
+    color: white;
+    font-size: 20;
+
+    .list {
+      display: inline;
+      margin-right: 10px;
+      list-style: none;
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      list-style: none;
+    }
+  }
+}
